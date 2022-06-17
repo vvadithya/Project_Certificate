@@ -72,7 +72,6 @@ def birth_write_pdf(name , day , month , year , nation , father , mother , gende
                 code = "ID Code: " + "".join(code)
                 pdf.cell(200, 15, txt = code , ln=8, align = 'L')
                 pdf.set_font("Arial", size=16)                  
-                pdf.cell(200, 15, txt = "Verify this card by scanning the QR Code" , ln=14 , align = 'C')                
                 pdf.output("birth_certificate.pdf")   
                 sg.Popup('Completed,saved birth certififcate as "birth_certificate.pdf"')  
 # Important set of data used later in the program
