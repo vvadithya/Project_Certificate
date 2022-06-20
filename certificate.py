@@ -9,7 +9,6 @@ from fpdf import FPDF
 import datetime
 import string
 import random
-
 # functions to write data to pdf
 def resident_write_pdf(name , day , month , year , address , image, nation , gender):
                 pdf = FPDF(orientation = 'L' , format = 'Legal')
